@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o cabeçalho */
+header {
+
+    background-color: #7f7f7f;
+    /* Cor de fundo do cabeçalho */
+    color: white;
+    /* Cor do texto no cabeçalho */
+    padding: 10px 0;
+    /* Espaçamento interno do cabeçalho */
+}
+
+nav {
+    top: 0;
+    position: sticky;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    /* Centraliza os itens horizontalmente */
+}
+
+button {
+    border-radius: 10px;
+    height: 40px;
+    border: none;
+    background-color: black;
+    padding: 10px;
+    margin: 0 15px;
+    /* Espaçamento entre os botões do menu */
+}
+
+button a {
+
+    text-decoration: none;
+    color: #766ec5;
+    /* Cor dos links no cabeçalho */
+    font-weight: bold;
+    transition: color 0.4s ease;
+    /* Transição suave de cor ao passar o mouse */
+}
+
+button a:hover {
+
+    color: yellow;
+    /* Cor do link ao passar o mouse */
+}
+
+.logo-container {
+
+    text-align: center;
+    /* Centraliza a imagem */
+    margin-top: 20px;
+    /* Espaçamento para separar a imagem dos botões */
+
+}
+
+a img {
+    border-radius: 20px;
+}
