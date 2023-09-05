@@ -4,17 +4,24 @@
     box-sizing: border-box;
 }
 
+/*Estilos para o corpo da página*/
+body {
+    background-color: #404040;
+}
+
 /* Estilos para o cabeçalho */
 header {
-
+    margin: 0 auto;
+    width: 1750px;
     background-color: #7f7f7f;
     /* Cor de fundo do cabeçalho */
     color: white;
     /* Cor do texto no cabeçalho */
-    padding: 10px 0;
+    padding: 10px 15px;
     /* Espaçamento interno do cabeçalho */
     position: sticky;
     top: 0;
+    border-radius: 20px;
 }
 
 nav {
@@ -64,6 +71,7 @@ button a:hover {
 .logo-container img {
     border-radius: 20px;
     width: 120px;
+
 }
 
 .logo-small {
@@ -75,4 +83,18 @@ button a:hover {
 .user {
     margin-left: 1px;
     width: 50px;
+}
+
+.market {
+    margin-left: auto;
+    width: 50px;
+}
+
+.search-box {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    height: 50px;
+    border-radius: 40px;
+    padding: 10px;
 }
