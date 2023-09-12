@@ -7,17 +7,19 @@ window.addEventListener('scroll', function () {
     }
 });
 
-
-// Obtém o elemento da caixa de pesquisa
+// Seleciona o elemento da caixa de pesquisa
 const searchBox = document.getElementById("searchBox");
 
-// Adiciona um ouvinte de evento quando o mouse entra na caixa de pesquisa
-searchBox.addEventListener("mouseenter", function () {
-    // Adiciona a classe "expanded" quando o mouse entra
+// Adiciona um ouvinte de evento para o evento hover
+searchBox.addEventListener("mouseenter", () => {
+    // Expande a caixa de pesquisa
     searchBox.classList.add("expanded");
 
-    // Define um temporizador para remover a classe após 5 segundos
-    setTimeout(function () {
+    // Define um timeout para fechar a caixa de pesquisa após 5 segundos
+    setTimeout(() => {
+        // Remove a classe "expanded" para fechar a caixa de pesquisa
         searchBox.classList.remove("expanded");
-    }, 5000); // 5000 milissegundos = 5 segundos
+    }, 3000); // 3000 milissegundos = 3 segundos
 });
+
+
