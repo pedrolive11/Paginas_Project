@@ -195,25 +195,25 @@ button a:hover {
 }
 
 #btn-1 {
-    background-image: url('/Imagens/Marvel_Logo.svg');
+    background-image: url('Imagens/Marvel_Logo.svg');
     background-position: center;
     background-size: cover;
 }
 
 #btn-2 {
-    background-image: url(/Imagens/Star_Wars_Logo.svg.png);
+    background-image: url(Imagens/Star_Wars_Logo.svg.png);
     background-position: center;
     background-size: 80%;
 }
 
 #btn-3 {
-    background-image: url('/Imagens/batimann.png');
+    background-image: url('Imagens/batimann.png');
     background-position: center;
     background-size: 60%;
 }
 
 #btn-4 {
-    background-image: url('/Imagens/jojo.png');
+    background-image: url('Imagens/jojo.png');
     background-position: center;
     background-size: 68%;
 }
