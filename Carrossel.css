@@ -108,5 +108,6 @@
 
 .alinhamento {
     display: flex;
+    margin-left: -1480px;
     margin-top: 1%;
 }
