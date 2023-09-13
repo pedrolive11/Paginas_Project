@@ -225,130 +225,31 @@ button a:hover {
     color: #766ec5;
 }
 
-.btns-imgs {
-    display: -webkit-box;
-    display: -ms-flexbox;
+.imgs {
     display: flex;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    margin-left: 420px;
+    margin: 0 auto;
+    width: 1000px;
+    height: 90px;
+    justify-content: space-between;
 }
 
-.btns-imgs button {
+.imgs img {
+    height: 100px;
+    width: 200px;
+}
+
+#img-1 {
+    width: 200px;
+    height: 100px;
+
+}
+
+#img-3 {
     background-color: black;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    width: 220px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    padding: 44px;
 }
 
-#btn-1 {
-    background-image: url('Imagens/Marvel_Logo.svg');
-    background-position: center;
-    background-size: cover;
-}
-
-#btn-2 {
-    background-image: url(Imagens/Star_Wars_Logo.svg.png);
-    background-position: center;
-    background-size: 80%;
-}
-
-#btn-3 {
-    background-image: url('Imagens/batimann.png');
-    background-position: center;
-    background-size: 60%;
-}
-
-#btn-4 {
-    background-image: url('Imagens/jojo.png');
-    background-position: center;
-    background-size: 68%;
-}
-
-#btn-1:hover {
-    cursor: pointer;
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-animation-delay: 0ms;
-    animation-delay: 0ms;
-}
-
-#btn-1:not(:hover) {
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-}
-
-#btn-2:hover {
-    cursor: pointer;
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-#btn-2:not(:hover) {
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-}
-
-#btn-3:hover {
-    cursor: pointer;
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-#btn-3:not(:hover) {
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-}
-
-#btn-4:hover {
-    cursor: pointer;
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-#btn-4:not(:hover) {
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
+#img-4 {
+    background-color: black;
 }
 
 .aside1 {
