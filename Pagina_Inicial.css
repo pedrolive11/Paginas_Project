@@ -267,11 +267,16 @@ button a:hover {
     color: #766ec5;
     font-size: x-large;
     float: left;
-    width: 320px;
+    width: 220px;
+    height: 260px;
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .aside1 li {
     display: flex;
     justify-content: center;
+    padding: 0.1rem;
 }
