@@ -1,3 +1,4 @@
+
 let count = 1;
 let isManualChange = false; // Flag para identificar mudanças manuais
 document.getElementById("radio1").checked = true;
@@ -33,3 +34,4 @@ buttons.forEach(button => {
         // Pausa manual por 3 segundos
     });
 });
+

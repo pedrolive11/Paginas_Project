@@ -1,6 +1,14 @@
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -22,6 +30,7 @@ header {
     /* Cor do texto no cabeçalho */
     padding: 10px 15px;
     /* Espaçamento interno do cabeçalho */
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     border-radius: 20px;
@@ -30,7 +39,11 @@ header {
 
 nav {
     height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 
     /* Centraliza os itens horizontalmente */
@@ -53,6 +66,8 @@ button a {
     color: #766ec5;
     /* Cor dos links no cabeçalho */
     font-weight: bold;
+    -webkit-transition: color 0.4s ease;
+    -o-transition: color 0.4s ease;
     transition: color 0.4s ease;
     /* Transição suave de cor ao passar o mouse */
 }
@@ -69,7 +84,11 @@ button a:hover {
     /* Centraliza a imagem */
     margin-top: 0px;
     /* Espaçamento para separar a imagem dos botões */
+    -webkit-transition: margin-top 0.4s ease, -webkit-transform 0.4s ease;
+    transition: margin-top 0.4s ease, -webkit-transform 0.4s ease;
+    -o-transition: margin-top 0.4s ease, transform 0.4s ease;
     transition: margin-top 0.4s ease, transform 0.4s ease;
+    transition: margin-top 0.4s ease, transform 0.4s ease, -webkit-transform 0.4s ease;
 }
 
 .logo-container img {
@@ -81,6 +100,8 @@ button a:hover {
 .logo-small {
 
     margin-top: -10px;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
     transform: scale(0.5);
 }
 
@@ -101,12 +122,20 @@ button a:hover {
     top: 15%;
     left: -1%;
     background: black;
+    -webkit-transform: translate(-20%, -20%);
+    -ms-transform: translate(-20%, -20%);
     transform: translate(-20%, -20%);
     height: 49px;
     padding: 20px;
     border-radius: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     float: right;
 }
@@ -120,6 +149,8 @@ button a:hover {
     font-size: 16px;
     line-height: 40px;
     width: 0;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
     transition: .2s;
     font-family: 'Open Sans';
 }
@@ -132,8 +163,14 @@ button a:hover {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -162,7 +199,11 @@ button a:hover {
 
 .btns-sub {
     width: 1000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-left: 420px;
     margin-bottom: 9px;
@@ -171,22 +212,36 @@ button a:hover {
 .btns-sub button {
     /*Botões embaixo do cabeçalho*/
     width: 1000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 30px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     color: #766ec5;
 }
 
 .btns-imgs {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     margin-left: 420px;
 }
 
 .btns-imgs button {
     background-color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     width: 220px;
     background-repeat: no-repeat;
@@ -220,45 +275,79 @@ button a:hover {
 
 #btn-1:hover {
     cursor: pointer;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
     transform: scale(1.1);
+    -webkit-animation-delay: 0ms;
+    animation-delay: 0ms;
 }
 
 #btn-1:not(:hover) {
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
     transform: scale(1);
 }
 
 #btn-2:hover {
     cursor: pointer;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
 
 #btn-2:not(:hover) {
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
     transform: scale(1);
 }
 
 #btn-3:hover {
     cursor: pointer;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
 
 #btn-3:not(:hover) {
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
     transform: scale(1);
 }
 
 #btn-4:hover {
     cursor: pointer;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
 
 #btn-4:not(:hover) {
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
     transform: scale(1);
 }
 
@@ -270,14 +359,24 @@ button a:hover {
     width: 220px;
     height: 260px;
     background-color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .aside1 li {
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding: 0.1rem;
 }
@@ -288,6 +387,8 @@ button a:hover {
 
 .aside1 a:hover {
     text-decoration: none;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     color: yellow;
 }
@@ -297,6 +398,8 @@ button a:hover {
     margin-right: 20px;
     width: 280px 0;
     height: 720px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-color: black;
     float: right;
@@ -307,6 +410,7 @@ button a:hover {
     margin-top: 10px;
     margin-left: 10px;
     width: 120px;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
@@ -316,6 +420,8 @@ button a:hover {
 
 #flex {
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     color: aliceblue;
 }
