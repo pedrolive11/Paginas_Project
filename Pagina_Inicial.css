@@ -79,8 +79,12 @@ button a:hover {
     /* Cor do link ao passar o mouse */
 }
 
-.logo-container {
 
+.nav_20L {
+    margin-left: -20px;
+}
+
+.logo-container {
     text-align: center;
     /* Centraliza a imagem */
     margin-top: 0px;
@@ -253,13 +257,13 @@ button a:hover {
 #img-2 {
     width: 219px;
     height: 100px;
-    margin-left: -40px;
+    margin-left: -30px;
 }
 
 #img-3 {
     width: 219px;
     background-color: black;
-    margin-left: -40px;
+    margin-left: -30px;
 }
 
 #img-4 {
@@ -288,7 +292,8 @@ button a:hover {
 }
 
 .aside1 {
-    margin-left: 70px;
+    position: absolute;
+    margin: 0 auto;
     border-radius: 10px;
     color: #766ec5;
     font-size: x-large;
@@ -374,13 +379,13 @@ button a:hover {
     align-items: flex-end;
     /* Alinha na parte inferior verticalmente */
     width: 1000px;
-    height: 100vh;
     /* Define a altura para ocupar toda a altura da janela do navegador */
 }
 
 /* CSS para as imagens dentro do container */
 .hqs img {
-    width: 60px;
+    width: 150px;
+    height: 250px;
     margin: 0 5px;
     /* Adiciona margem horizontal para espaçamento entre as imagens */
 }
