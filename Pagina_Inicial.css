@@ -35,6 +35,7 @@ header {
     top: 0;
     border-radius: 20px;
     margin-bottom: 60px;
+    z-index: 3;
 }
 
 nav {
@@ -205,8 +206,10 @@ button a:hover {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-left: 420px;
-    margin-bottom: 9px;
+    align-items: center;
+    margin-bottom: 10px;
+    margin: 0 auto;
+
 }
 
 .btns-sub button {
@@ -223,6 +226,7 @@ button a:hover {
     -ms-flex-align: center;
     align-items: center;
     color: #766ec5;
+    margin-bottom: 10px;
 }
 
 .imgs {
@@ -264,13 +268,33 @@ button a:hover {
     margin-right: 12px;
 }
 
+#img-1,
+#img-2,
+#img-3,
+#img-4 {
+    transform: scale(1);
+    transition: .3s;
+}
+
+#img-1:hover,
+#img-2:hover,
+#img-3:hover,
+#img-4:hover {
+    /* Aplica uma transformação de escala para aumentar o tamanho em 1.2 vezes (120%) */
+    transform: scale(1.1);
+    /* Define uma transição suave para a animação */
+    transition: transform 0.3s ease-in-out;
+    /* Você pode ajustar a duração (0.3s) e a função de temporização (ease-in-out) conforme necessário */
+}
+
 .aside1 {
+    margin-left: 70px;
     border-radius: 10px;
     color: #766ec5;
     font-size: x-large;
     float: left;
     width: 220px;
-    height: 260px;
+    height: 490px;
     background-color: black;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -291,7 +315,7 @@ button a:hover {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 0.1rem;
+    padding: 0.8rem;
 }
 
 .aside1 a {
@@ -341,4 +365,22 @@ button a:hover {
 
 .blockk {
     display: block;
+}
+
+.hqs {
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: flex-end;
+    /* Alinha na parte inferior verticalmente */
+    width: 1000px;
+    height: 100vh;
+    /* Define a altura para ocupar toda a altura da janela do navegador */
+}
+
+/* CSS para as imagens dentro do container */
+.hqs img {
+    width: 60px;
+    margin: 0 5px;
+    /* Adiciona margem horizontal para espaçamento entre as imagens */
 }
