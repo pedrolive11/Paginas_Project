@@ -1,0 +1,73 @@
+#div-cat {
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#cat1 {
+    width: 100%;
+    /* Defina a largura desejada para cada lista */
+    padding: 0 10px;
+}
+
+#cat1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    margin-left: 150px;
+    color: #fff;
+}
+
+#cat1 li {
+    overflow: visible;
+}
+
+#cat1 a {
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: #0000FF;
+}
+
+#cat1 a:hover {
+    color: yellow;
+}
+
+/**/
+
+#cat1-2 {
+    width: 100%;
+    /* Defina a largura desejada para cada lista */
+    padding: 0 10px;
+}
+
+#cat1-2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    margin-left: 190px;
+    color: #fff;
+}
+
+#cat1-2 li {
+    overflow: visible;
+}
+
+#cat1-2 a {
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: #0000FF;
+}
+
+#cat1-2 a:hover {
+    color: yellow;
+}
+
+#cat1 {
+    margin-right: -50%;
+}
+
+#h1 {
+    margin-left: 150px;
+    background-color: black;
+    width: 450px;
+    color: #766ec5;
+    font-size: 48px;
+}

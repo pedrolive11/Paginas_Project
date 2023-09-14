@@ -293,22 +293,19 @@ button a:hover {
 
 .aside1 {
     position: absolute;
-    margin: 0 auto;
+    /* Alterado de "absolute" para "fixed" */
+    top: 120px;
+    /* Define a distância a partir do topo da janela */
+    left: 100px;
+    /* Define a posição da esquerda da janela */
     border-radius: 10px;
     color: #766ec5;
     font-size: x-large;
-    float: left;
     width: 220px;
     height: 490px;
     background-color: black;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -388,4 +385,16 @@ button a:hover {
     height: 250px;
     margin: 0 5px;
     /* Adiciona margem horizontal para espaçamento entre as imagens */
+}
+
+.alin {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 360px;
+}
+
+.alin img {
+    width: 220px;
+    height: 300px;
 }
