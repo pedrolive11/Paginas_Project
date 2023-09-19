@@ -23,7 +23,6 @@ body {
 header {
     margin: 0 auto;
     height: 65px;
-    width: 1750px;
     background-color: #7f7f7f;
     /* Cor de fundo do cabeçalho */
     color: white;
@@ -125,7 +124,6 @@ button a:hover {
 .search-box {
     position: relative;
     top: 15%;
-    left: -1%;
     background: black;
     -webkit-transform: translate(-20%, -20%);
     -ms-transform: translate(-20%, -20%);
@@ -307,6 +305,7 @@ button a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 .aside1 li {
@@ -397,4 +396,50 @@ button a:hover {
 .alin img {
     width: 220px;
     height: 300px;
+}
+
+/*/RICHARD CSS DA MASSA/*/
+@media (min-width: 100%) {
+    header {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 1250px) {
+    header {
+        max-width: 1600px;
+    }
+
+
+}
+
+@media (max-width: 1575px) {
+    header {
+        min-width: 1075px;
+    }
+
+    .aside1 {
+        display: none;
+    }
+}
+
+@media (max-width: 1050px) {
+    header .nav_20L {
+        margin-left: -100px;
+    }
+
+    .search-box {
+        left: 10px;
+    }
+
+    header .market {
+        margin-right: 90px;
+    }
+}
+
+.container_a {
+    background-color: black;
+    display: flex;
+    position: relative;
+    align-items: center;
 }
