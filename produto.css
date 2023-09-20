@@ -1,0 +1,13 @@
+#image-container {
+	text-align: center;
+}
+
+#main-image {
+	max-width: 100%;
+}
+
+.thumbnail {
+	cursor: pointer;
+	display: inline-block;
+	margin: 10px;
+}
