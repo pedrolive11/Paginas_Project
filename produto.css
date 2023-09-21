@@ -3,7 +3,7 @@
 }
 
 #main-image {
-	max-width: 100%;
+	max-width: 720px;
 	max-height: 550px;
 	border-radius: 12px;
 }
@@ -51,4 +51,57 @@ button#toggleButton {
 	right: 0;
 }
 
-.price {}
+.Ma1n {
+	display: flex;
+	flex-direction: column;
+	height: fit-content;
+	/* Para ocupar toda a altura da tela */
+	align-items: start;
+	margin: 0 auto;
+}
+
+.richard_1 {
+	display: block;
+	margin: 0 auto;
+	background-color: #808080;
+	border-radius: 50px;
+	padding: 10px 50px;
+
+}
+
+/* COMPRAR E CARRINHO*/
+.product-box {
+	background-color: aliceblue;
+	padding: 20px;
+	text-align: center;
+	width: 200px;
+	height: fit-content;
+}
+
+.product-box h2 {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.product-box p {
+	font-size: 14px;
+	margin-bottom: 10px;
+
+}
+
+.product-box .buy-button,
+.product-box .cart-button {
+	background-color: black;
+	color: #0056b3;
+	border: none;
+	padding: 5px 0;
+	width: 140px;
+	margin: 5px;
+	cursor: pointer;
+}
+
+.product-box .buy-button:hover,
+.product-box .cart-button:hover {
+	background-color: #0056b3;
+	color: black;
+}

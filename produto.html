@@ -40,54 +40,47 @@
             </a>
         </div>
     </header>
-    <!--Produto-->
-    <h1>Batman</h1>
-    <div class="container_product">
-        <div id="image-container">
+    <div class="richard">
+        <div class="Ma1n">
+            <div class="richard_1">
+                <div class="richard_2">
+                    <h1 class="h1">Batman</h1> <!-- Título do Produto -->
+                </div>
+                <div class="container_product">
+                    <div id="image-container">
+                        <img id="main-image" src="hqs/batman_ano1.jpg" alt="Imagem Principal">
+                    </div>
 
-            <img id="main-image" src="hqs/batman_ano1.jpg" alt="Imagem Principal">
+                    <!-- Outros elementos do Produto aqui -->
+                    <div class="container_thumbs">
+                        <!-- Miniaturas -->
+                        <img class="thumbnail" src="hqs/batman_ano1.jpg" alt="Miniatura 1"
+                            onclick="changeImage('hqs/batman_ano1.jpg')">
+                        <img class="thumbnail" src="hqs/batmanano1ver.jpg" alt="Miniatura 2"
+                            onclick="changeImage('hqs/batmanano1ver.jpg')">
+                    </div>
+                    <!-- Descrição do Produto -->
+                    <div class="desc">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor sit
+                                amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor sit
+                                amet...Lorem ipsum dolor sit amet...Lorem ipsum d</p>
+                        </div>
+                        <button id="toggleButton">Mostrar mais</button>
+                    </div>
 
-        </div>
+                    <!-- Preço do Produto -->
+                    <div class="product-box">
+                        <p>R$XX,XX</p>
+                        <button class="buy-button">Comprar</button>
+                        <button class="cart-button">Adicionar ao Carrinho</button>
 
-        <div class="container_thumbs">
-            <!-- Miniaturas -->
-            <img class="thumbnail" src="hqs/batman_ano1.jpg" alt="Miniatura 1"
-                onclick="changeImage('hqs/batman_ano1.jpg')">
-            <img class="thumbnail" src="hqs/batmanano1ver.jpg" alt="Miniatura 2"
-                onclick="changeImage('hqs/batmanano1ver.jpg')">
-        </div>
-        <!-- Descrição do Produto -->
-        <div class="desc">
-            <div class="content">
-                <p>Lorem ipsum dolor sit amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor sit amet...Lorem ipsum
-                    dolor sit amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor sit
-                    amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor sit amet...Lorem
-                    ipsum dolor sit amet...Lorem ipsum dolor sit amet...Lorem ipsum dLorem ipsum dolor sit amet...Lorem
-                    ipsum dolor sit amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor
-                    sit amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor sit
-                    amet...Lorem ipsum dLorem ipsum dolor sit amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor sit
-                    amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor sit amet...Lorem
-                    ipsum dolor sit amet...Lorem ipsum dolor sit amet...Lorem ipsum dLorem ipsum dolor sit amet...Lorem
-                    ipsum dolor sit amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor
-                    sit amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor sit
-                    amet...Lorem ipsum dLorem ipsum dolor sit amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor sit
-                    amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor sit amet...Lorem
-                    ipsum dolor sit amet...Lorem ipsum dolor sit amet...Lorem ipsum dLorem ipsum dolor sit amet...Lorem
-                    ipsum dolor sit amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor
-                    sit amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor sit
-                    amet...Lorem ipsum d</p>
+                        <button id="openModalButton">Mostrar Opções de Pagamento</button>
+                    </div>
+                </div>
             </div>
-            <button id="toggleButton">Mostrar mais</button>
         </div>
-
-        <!-- Preço do Produto -->
-        <div class="price">
-            <p>Preço: R$ 19,99</p>
-        </div>
-        <!-- Botão de Compra -->
-        <button onclick="adicionarAoCarrinho()">Adicionar ao Carrinho</button>
     </div>
-
 
 
     <script src="Pagina_Inicial.js"></script>
