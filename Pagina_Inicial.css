@@ -438,7 +438,6 @@ button a:hover {
 }
 
 .container_a {
-    background-color: black;
     display: flex;
     position: relative;
     align-items: center;
