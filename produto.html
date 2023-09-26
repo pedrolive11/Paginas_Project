@@ -40,6 +40,7 @@
             </a>
         </div>
     </header>
+
     <div class="richard">
         <div class="Ma1n">
             <div class="richard_1">
@@ -69,14 +70,83 @@
                         <button id="toggleButton">Mostrar mais</button>
                     </div>
 
-                    <!-- Preço do Produto -->
                     <div class="product-box">
                         <p>R$XX,XX</p>
                         <button class="buy-button">Comprar</button>
                         <button class="cart-button">Adicionar ao Carrinho</button>
-
-                        <button id="openModalButton">Mostrar Opções de Pagamento</button>
+                        <button class="payment-button">Opções de Pagamento</button>
                     </div>
+
+                    <!-- Modal -->
+                    <div id="payment-modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close-button" id="close-modal">&times;</span>
+                            <div class="payment-options">
+                                <!-- Abas de pagamento -->
+                                <div class="payment-tabs">
+                                    <div class="tab" id="credit-tab"><img src="Imagens/crediy.png" alt=""></div>
+                                    <div class="tab" id="pix-tab"><img src="Imagens/icons8-pix-512.png" alt=""></div>
+                                    <div class="tab" id="crypto-tab"><img src="Imagens/dogecoin.png" alt=""></div>
+                                </div>
+
+                                <!-- Conteúdo das abas -->
+                                <div class="tab-content" id="credit-content">
+                                    <!-- Tabela de parcelas de cartão de crédito -->
+                                    <table>
+                                        <tr>
+                                            <td>À vista - Até 5% de desconto</td>
+                                            <td>Total: R$ 9.499,99</td>
+                                        </tr>
+                                        <!-- Adicione as demais linhas da tabela aqui -->
+                                    </table>
+                                    <p>Cartões aceitos: "Imagens das bandeiras aceitas"</p>
+                                </div>
+
+                                <div class="tab-content" id="pix-content">
+                                    <!-- Conteúdo do pagamento via Pix -->
+                                    <div class="price-container">
+                                        <span class="big-price">R$ 9.499,99</span>
+                                        <p class="small-text">À vista no Pix com 5% OFF</p>
+                                        <hr class="divider">
+                                        <p class="small-text">Pague com o PIX e priorizamos o despacho em 4 horas!</p>
+                                    </div>
+                                </div>
+
+                                <div class="tab-content" id="crypto-content">
+                                    <!-- Conteúdo do pagamento em criptomoeda -->
+                                    <h3>Pagamento com Dogecoin</h3>
+
+                                    <!-- Endereço da Carteira Dogecoin -->
+                                    <h4>Endereço da Carteira:</h4>
+                                    <p><strong>DOGEADDRESS: <a href="">D56789ABCDEFGH1234567890</a> </strong></p>
+
+                                    <!-- Processo de Pagamento -->
+                                    <h4>Como Pagar:</h4>
+                                    <p>Para efetuar o pagamento com Dogecoin:</p>
+                                    <ul>
+                                        <li>Abra sua carteira Dogecoin.</li>
+                                        <li>Insira o valor total da compra em Dogecoin.</li>
+                                        <li>Confirme a transação.</li>
+                                    </ul>
+
+                                    <!-- QR Code da Carteira Dogecoin (substitua com sua própria imagem) -->
+                                    <img src="/Imagens/dogecoinn2.svg" id="qr-code"
+                                        alt="Código QR da Carteira Dogecoin">
+
+                                    <!-- Assistência -->
+                                    <h4>Assistência:</h4>
+                                    <p>Para qualquer dúvida ou assistência com o pagamento em Dogecoin, entre em contato
+                                        conosco em <a href="mailto:support@exemplo.com">support@exemplo.com</a>.</p>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
                 </div>
             </div>
         </div>
