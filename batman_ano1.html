@@ -10,7 +10,12 @@
     <link rel="stylesheet" type="text/css" href="lib/slick-1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="categorias.css">
     <link rel="stylesheet" href="produto.css">
+    <link rel="stylesheet" href="produto.scss">
     <link rel=" stylesheet" href="catalogo.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="lib/slick-1.8.1/slick/slick.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <title>LeCooper</title>
 </head>
 
@@ -45,13 +50,33 @@
         <div class="Ma1n">
             <div class="richard_1">
                 <div class="richard_2">
-                    <h1 class="h1">Batman</h1> <!-- Título do Produto -->
+                    <h1 class="h1">Batman Ano Um</h1> <!-- Título do Produto -->
+
                 </div>
                 <div class="container_product">
                     <div id="image-container">
                         <img id="main-image" src="hqs/batman_ano1.jpg" alt="Imagem Principal">
-                    </div>
+                        <div class="container">
+                            <div class="feedback">
+                                <div class="rating">
+                                    <input type="radio" name="rating" id="rating-5">
+                                    <label for="rating-5"></label>
 
+                                    <input type="radio" name="rating" id="rating-4">
+                                    <label for="rating-4"></label>
+
+                                    <input type="radio" name="rating" id="rating-3">
+                                    <label for="rating-3"></label>
+
+                                    <input type="radio" name="rating" id="rating-2">
+                                    <label for="rating-2"></label>
+
+                                    <input type="radio" name="rating" id="rating-1">
+                                    <label for="rating-1"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- Outros elementos do Produto aqui -->
                     <div class="container_thumbs">
                         <!-- Miniaturas -->
@@ -59,13 +84,41 @@
                             onclick="changeImage('hqs/batman_ano1.jpg')">
                         <img class="thumbnail" src="hqs/batmanano1ver.jpg" alt="Miniatura 2"
                             onclick="changeImage('hqs/batmanano1ver.jpg')">
+
                     </div>
+
+
                     <!-- Descrição do Produto -->
                     <div class="desc">
                         <div class="content">
-                            <p>Lorem ipsum dolor sit amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor sit
-                                amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor sit amet...Lorem ipsum dolor sit
-                                amet...Lorem ipsum dolor sit amet...Lorem ipsum d</p>
+                            <p>"Batman: Ano Um" é uma renomada história em quadrinhos que explora as origens do icônico
+                                super-herói da DC Comics, Batman. Escrita por Frank Miller e com arte de David
+                                Mazzucchelli, a série foi publicada nos números 404 a 407 da revista "Batman" entre 1987
+                                e 1988.
+                            </p>
+                            <p>
+                                A trama de "Batman: Ano Um" revisita os primeiros passos de Bruce Wayne na jornada que o
+                                levará a se tornar o Cavaleiro das Trevas. A narrativa se concentra em seu retorno a
+                                Gotham City após anos de treinamento no exterior. Ao voltar para a cidade, ele se depara
+                                com uma Gotham assolada pela corrupção e pelo crime desenfreado.
+                            </p>
+                            <p>
+                                Ao mesmo tempo, a história introduz James Gordon, um honesto e determinado detetive da
+                                polícia de Gotham que luta contra a corrupção dentro da própria força policial. As vidas
+                                de Batman e Gordon se entrelaçam à medida que eles buscam limpar a cidade do crime e da
+                                corrupção que a dominam.
+                            </p>
+                            <p>
+                                "Batman: Ano Um" é uma narrativa realista e sombria que redefine as origens do Batman,
+                                mostrando um herói mais humano e vulnerável em sua busca por justiça. A obra é elogiada
+                                por sua abordagem madura e pelas ilustrações marcantes de Mazzucchelli, que capturam a
+                                atmosfera sombria e crua de Gotham City.
+                            </p>
+                            <p>
+                                Esta história em quadrinhos é amplamente considerada uma das melhores histórias do
+                                Batman já escritas e continua a ser uma leitura essencial para os fãs do Cavaleiro das
+                                Trevas, oferecendo uma visão profunda e envolvente das origens do personagem e de seu
+                                compromisso com a luta contra o crime.</p>
                         </div>
                         <button id="toggleButton">Mostrar mais</button>
                     </div>
@@ -75,6 +128,7 @@
                         <button class="buy-button">Comprar</button>
                         <button class="cart-button">Adicionar ao Carrinho</button>
                         <button class="payment-button">Opções de Pagamento</button>
+
                     </div>
 
                     <!-- Modal -->
@@ -94,8 +148,8 @@
                                     <!-- Tabela de parcelas de cartão de crédito -->
                                     <table>
                                         <tr>
-                                            <td>À vista - Até 5% de desconto</td>
-                                            <td>Total: R$ 9.499,99</td>
+                                            <td>À vista - Até X% de desconto</td>
+                                            <td>Total: R$ XX.XX,X</td>
                                         </tr>
                                         <!-- Adicione as demais linhas da tabela aqui -->
                                     </table>
@@ -155,9 +209,7 @@
 
     <script src="Pagina_Inicial.js"></script>
     <script src="Carrossel.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="lib/slick-1.8.1/slick/slick.js"></script>
+
     <script src="produto.js"></script>
 </body>
 
