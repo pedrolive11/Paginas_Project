@@ -48,6 +48,18 @@ button#toggleButton {
 	position: absolute;
 	bottom: 0;
 	right: 0;
+
+}
+
+button#toggleButton:hover {
+	background: black;
+	border: none;
+	color: yellow;
+	cursor: pointer;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
 }
 
 .Ma1n {
@@ -137,6 +149,7 @@ button#toggleButton {
 
 }
 
+/*Modal pra abrir opções de pagamento*/
 .modal-content {
 	background-color: #fff;
 	position: absolute;
@@ -335,7 +348,56 @@ body {
 	box-sizing: border-box;
 }
 
-.container {
+/*modal de descrição*/
+/* Estilize o modal para que ele seja inicialmente invisível */
+.modal2 {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 1;
+}
+
+/* Estilize o conteúdo do modal */
+.modal-content2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #8eb0bc;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 760px;
+	word-wrap: break-word;
+}
+
+/* Estilize o botão de fechar */
+#closeButton2 {
+	background-color: black;
+	color: #0056b3;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#closeButton2:hover {
+	background-color: #d32f2f;
+	color: yellow;
+
+}
+
+
+
+.alinhamento01 {
+	display: flex;
+}
+
+.container- {
 	background-color: transparent;
 	display: flex;
 	flex-wrap: wrap;
@@ -428,4 +490,101 @@ textarea {
 #submit-button:hover {
 	background-color: yellow;
 	color: black;
+}
+
+.slick-carousel {
+	width: 500px;
+
+}
+
+.center {
+	width: 250px;
+	/* Largura dos slides */
+	height: 300px;
+	/* Altura dos slides */
+	margin: 0 10px;
+	/* Margem entre os slides */
+	background-color: #f0f0f0;
+	/* Cor de fundo dos slides */
+	border: 1px solid #ddd;
+	/* Borda dos slides */
+	text-align: center;
+	/* Alinhamento de texto no centro */
+	box-sizing: border-box;
+	/* Caixa de tamanho de borda */
+	transition: transform 0.3s;
+	/* Efeito de transição ao centralizar */
+}
+
+.slick-center {
+	transform: scale(1.1);
+	/* Efeito de escala no slide central */
+	transition: transform 0.3s;
+	/* Efeito de transição ao centralizar */
+	z-index: 2;
+	/* Coloque o slide central acima dos outros */
+	/* Adicione outros estilos conforme necessário */
+}
+
+.slick-slide {
+	padding: 10px;
+}
+
+
+.slick-slide img {
+	width: 200px;
+	height: 200px;
+}
+
+.slick-prev,
+.slick-next {
+	background-color: transparent;
+	/* Cor de fundo das setas */
+	color: #0056b3;
+	/* Cor do ícone das setas */
+	font-size: 24px;
+	/* Tamanho do ícone das setas */
+	width: 40px;
+	/* Largura das setas */
+	height: 40px;
+	/* Altura das setas */
+	border-radius: 50%;
+	/* Forma das setas (círculo) */
+	line-height: 40px;
+	/* Centralize o ícone verticalmente */
+	text-align: center;
+	/* Centralize o ícone horizontalmente */
+	position: absolute;
+	/* Posicione as setas absolutamente no carrossel */
+	top: 50%;
+	/* Posicione as setas no centro verticalmente */
+	transform: translateY(-50%);
+	/* Ajuste vertical das setas */
+	cursor: pointer;
+	/* Altere o cursor para uma mão quando passar o mouse */
+	z-index: 3;
+	/* Coloque as setas acima dos slides */
+	/* Adicione outros estilos conforme necessário */
+}
+
+.flex {
+	display: flex;
+}
+
+.POsss {
+	margin: 20px auto;
+}
+
+.seta1 img,
+.seta2 img {
+	width: 40px;
+	margin-top: 120px;
+}
+
+.seta1 {
+	margin-left: 40px;
+}
+
+.seta2 {
+	margin-left: 0px;
 }
