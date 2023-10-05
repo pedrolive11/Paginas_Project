@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Pagina_Inicial.css">
+    <link rel="stylesheet" href="Carrossel.css">
+    <link rel="stylesheet" type="text/css" href="lib/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="lib/slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="categorias.css">
+    <title>LeCooper</title>
+</head>
+
+<body>
+    <header>
+        <div> <!-- Div do usuário -->
+            <img class="user" src="Imagens/user.png" alt="user">
+        </div>
+        <div style="height: 0px; margin: 0; display:flex; justify-content:center">
+            <nav class="nav_20L"> <!-- Botões de navegação -->
+                <button><a href="categorias.html">Categorias</a></button>
+                <button><a href="livros.html">Livros</a></button>
+                <a class="logo-container" href="index.html"><img src="Imagens/lecooper.png" alt="LeCooper"
+                        width="120px"></a>
+                <button><a href="catalogo1.html">Catálogo</a></button>
+                <button><a href="lancamentos.html">Lançamentos</a></button>
+
+            </nav>
+        </div>
+        <div> <!-- Div do carrinho -->
+            <img class="market" src="Imagens/carrinho-de-compras.png" alt="user">
+        </div> <!-- Div da caixa de pesquisa -->
+        <div class="search-box" id="searchBox">
+            <input type="text" class="search-txt" placeholder="Pesquisar...">
+            <a href="" class="search-btn">
+                <img src="Imagens/lupa.svg" alt="Lupa" height="20px" width="20px">
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="blockk">
+            <div class="btns-sub">
+                <button><a href="">Mais Vendidos</a></button>
+                <button><a href="">Melhor Avaliados </a></button>
+                <button><a href="">Promoções</a></button>
+                <button><a href="">Edições Especiais</a></button>
+            </div>
+
+
+        </div>
+        <div class="product-container">
+
+            <div class="product">
+                <a href="jojo.html"> <img src="hqs/jojo.jpg" alt="Produto 4"></a>
+                <div class="product-title">Jojo </div>
+            </div>
+            <div class="product">
+                <a href="jojo_phantom.html"><img src="hqs/jojo_phamtom.jpg" alt="Produto 4"></a>
+                <div class="product-title">Jojo Phantom Blood</div>
+            </div>
+
+            <!-- Adicione mais produtos conforme necessário -->
+        </div>
+
+
+
+
+        <script src="Pagina_Inicial.js"></script>
+        <script src="Carrossel.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="lib/slick-1.8.1/slick/slick.js"></script>
+        <script src="apenas.js"></script>
+</body>
+
+</html>

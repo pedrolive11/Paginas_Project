@@ -14,7 +14,7 @@ function nextImage() {
 
 
 // Chama a função nextImage a cada 2 segundos
-let interval = setInterval(nextImage, 2000);
+let interval = setInterval(nextImage, 4000);
 
 // Pausa a troca automática quando o mouse está sobre um botão
 const buttons = document.querySelectorAll('.manual-btn');
@@ -23,14 +23,14 @@ buttons.forEach(button => {
         clearInterval(interval);
     });
     button.addEventListener('mouseout', () => {
-        interval = setInterval(nextImage, 2000);
+        interval = setInterval(nextImage, 4000);
     });
     button.addEventListener('click', () => {
         isManualChange = true;
         setTimeout(() => {
             isManualChange = false;
             nextImage(); // Aciona a próxima imagem automaticamente após uma pausa
-        }, 3000);
+        }, 4000);
         // Pausa manual por 3 segundos
     });
 });

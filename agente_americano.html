@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Pagina_Inicial.css">
+    <link rel="stylesheet" href="Carrossel.css">
+    <link rel="stylesheet" type="text/css" href="lib/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="lib/slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="categorias.css">
+    <link rel="stylesheet" href="produto.css">
+    <link rel="stylesheet" href="produto.scss">
+    <link rel=" stylesheet" href="catalogo.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="lib/slick-1.8.1/slick/slick.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>LeCooper</title>
+</head>
+
+<body>
+    <header>
+        <div> <!-- Div do usuário -->
+            <img class="user" src="Imagens/user.png" alt="user">
+        </div>
+        <div style="height: 0px; margin: 0; display:flex; justify-content:center">
+            <nav class="nav_20L"> <!-- Botões de navegação -->
+                <button><a href="categorias.html">Categorias</a></button>
+                <button><a href="livros.html">Livros</a></button>
+                <a class="logo-container" href="index.html"><img src="Imagens/lecooper.png" alt="LeCooper"
+                        width="120px"></a>
+                <button><a href="catalogo1.html">Catálogo</a></button>
+                <button><a href="lancamentos.html">Lançamentos</a></button>
+
+            </nav>
+        </div>
+        <div> <!-- Div do carrinho -->
+            <img class="market" src="Imagens/carrinho-de-compras.png" alt="user">
+        </div> <!-- Div da caixa de pesquisa -->
+        <div class="search-box" id="searchBox">
+            <input type="text" class="search-txt" placeholder="Pesquisar...">
+            <a href="" class="search-btn">
+                <img src="Imagens/lupa.svg" alt="Lupa" height="20px" width="20px">
+            </a>
+        </div>
+    </header>
+
+    <div class="richard">
+        <div class="Ma1n">
+            <div class="richard_1">
+                <div class="richard_2">
+                    <h1 class="h1">Agente Americano</h1> <!-- Título do Produto -->
+                </div>
+                <div class="alinhamento01">
+                    <div class="container_product">
+                        <div id="image-container">
+                            <img id="main-image" src="hqs/Agente_americano.jpg" alt="Imagem Principal">
+                            <div class="container-p">
+                                <div class="feedback">
+                                    <div class="rating">
+                                        <input type="radio" name="rating" id="rating-5">
+                                        <label for="rating-5"></label>
+
+                                        <input type="radio" name="rating" id="rating-4">
+                                        <label for="rating-4"></label>
+
+                                        <input type="radio" name="rating" id="rating-3">
+                                        <label for="rating-3"></label>
+
+                                        <input type="radio" name="rating" id="rating-2">
+                                        <label for="rating-2"></label>
+
+                                        <input type="radio" name="rating" id="rating-1">
+                                        <label for="rating-1"></label>
+                                    </div>
+
+                                    <textarea id="review" placeholder="Digite sua avaliação aqui" rows="4"
+                                        maxlength="1270"></textarea>
+                                    <button id="submit-button">Enviar
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Outros elementos do Produto aqui -->
+                    <div class="bloclockkks">
+                        <div class="flex">
+
+                            <div class="container_thumbs">
+                                <!-- Miniaturas -->
+                                <img class="thumbnail" src="" alt="" onclick="changeImage('')">
+                                <img class="thumbnail" src=" " alt="" onclick="changeImage('')">
+
+                            </div>
+
+
+                            <!-- Descrição do Produto -->
+                            <div class="desc">
+                                <div class="content">
+
+                                    <!-- Seu conteúdo existente aqui -->
+                                    <p>
+                                        "Agente Americano: Fanático Americano" é uma graphic novel que segue a vida de
+                                        John Walker, um ex-soldado que se torna o novo Capitão América após Steve
+                                        Rogers. Walker é um fervoroso patriota e herói que luta pelo ideal americano com
+                                        zelo extremo. No entanto, sua abordagem brutal e implacável para o crime deixa
+                                        muitos questionando se ele é realmente digno do escudo.
+                                    </p>
+                                    <p>
+                                        A história explora temas profundos de identidade nacional, fanatismo e
+                                        moralidade. À
+                                        medida que Walker enfrenta ameaças poderosas e conspirações sinistras, ele se vê
+                                        confrontando seus próprios demônios interiores e o preço que está disposto a
+                                        pagar
+                                        para proteger sua nação.
+                                    </p>
+                                    <!-- Botão para abrir o modal -->
+                                    <button id="toggleButton">Ver mais...</button>
+                                </div>
+                            </div>
+
+                            <!-- Modal -->
+                            <div id="modal2" class="modal2">
+                                <div class="modal-content2">
+                                    <!-- Conteúdo adicional aqui -->
+                                    <p>
+                                        "Agente Americano: Fanático Americano" é uma graphic novel que segue a vida de
+                                        John Walker, um ex-soldado que se torna o novo Capitão América após Steve
+                                        Rogers. Walker é um fervoroso patriota e herói que luta pelo ideal americano com
+                                        zelo extremo. No entanto, sua abordagem brutal e implacável para o crime deixa
+                                        muitos questionando se ele é realmente digno do escudo.
+                                    </p>
+                                    <p>
+                                        A história explora temas profundos de identidade nacional, fanatismo e
+                                        moralidade. À
+                                        medida que Walker enfrenta ameaças poderosas e conspirações sinistras, ele se vê
+                                        confrontando seus próprios demônios interiores e o preço que está disposto a
+                                        pagar
+                                        para proteger sua nação.
+                                    </p>
+                                    <button id="closeButton2">Fechar</button>
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+                            <div class="product-box">
+                                <p>R$XX,XX</p>
+                                <button class="buy-button">Comprar</button>
+                                <button class="cart-button">Adicionar ao Carrinho</button>
+                                <button class="payment-button">Opções de Pagamento</button>
+
+                            </div>
+
+                            <!-- Modal -->
+                            <div id="payment-modal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close-button" id="close-modal">&times;</span>
+                                    <div class="payment-options">
+                                        <!-- Abas de pagamento -->
+                                        <div class="payment-tabs">
+                                            <div class="tab" id="credit-tab"><img src="Imagens/crediy.png" alt=""></div>
+                                            <div class="tab" id="pix-tab"><img src="Imagens/icons8-pix-512.png" alt="">
+                                            </div>
+                                            <div class="tab" id="crypto-tab"><img src="Imagens/dogecoin.png" alt="">
+                                            </div>
+                                        </div>
+
+                                        <!-- Conteúdo das abas -->
+                                        <div class="tab-content" id="credit-content">
+                                            <!-- Tabela de parcelas de cartão de crédito -->
+                                            <table>
+                                                <tr>
+                                                    <td>À vista - Até X% de desconto</td>
+                                                    <td>Total: R$ XX.XX,X</td>
+                                                </tr>
+                                                <!-- Adicione as demais linhas da tabela aqui -->
+                                            </table>
+                                            <p>Cartões aceitos: "Imagens das bandeiras aceitas"</p>
+                                        </div>
+
+                                        <div class="tab-content" id="pix-content">
+                                            <!-- Conteúdo do pagamento via Pix -->
+                                            <div class="price-container">
+                                                <span class="big-price">R$ 9.499,99</span>
+                                                <p class="small-text">À vista no Pix com 5% OFF</p>
+                                                <hr class="divider">
+                                                <p class="small-text">Pague com o PIX e priorizamos o despacho em 4
+                                                    horas!</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-content" id="crypto-content">
+                                            <!-- Conteúdo do pagamento em criptomoeda -->
+                                            <h3>Pagamento com Dogecoin</h3>
+
+                                            <!-- Endereço da Carteira Dogecoin -->
+                                            <h4>Endereço da Carteira:</h4>
+                                            <p><strong>DOGEADDRESS: <a href="">D56789ABCDEFGH1234567890</a> </strong>
+                                            </p>
+
+                                            <!-- Processo de Pagamento -->
+                                            <h4>Como Pagar:</h4>
+                                            <p>Para efetuar o pagamento com Dogecoin:</p>
+                                            <ul>
+                                                <li>Abra sua carteira Dogecoin.</li>
+                                                <li>Insira o valor total da compra em Dogecoin.</li>
+                                                <li>Confirme a transação.</li>
+                                            </ul>
+
+                                            <!-- QR Code da Carteira Dogecoin (substitua com sua própria imagem) -->
+                                            <img src="/Imagens/dogecoinn2.svg" id="qr-code"
+                                                alt="Código QR da Carteira Dogecoin">
+
+                                            <!-- Assistência -->
+                                            <h4>Assistência:</h4>
+                                            <p>Para qualquer dúvida ou assistência com o pagamento em Dogecoin, entre em
+                                                contato
+                                                conosco em <a href="mailto:support@exemplo.com">support@exemplo.com</a>.
+                                            </p>
+
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex">
+
+                            <div class="seta1">
+                                <img src="/Imagens/flechaesq.png" alt="">
+                            </div>
+
+                            <div class="slick-carousel POsss">
+                                <div class="slick-slide">
+                                    <a href="zelda.html"><img src="hqs/zelda.jpg" alt="Slide 1"></a>
+                                </div>
+                                <div class="slick-slide">
+                                    <a href="darksouls.html"> <img src="hqs/dark_souls.jpg" alt="Slide 2"></a>
+                                </div>
+                                <div class="slick-slide">
+                                    <a href="ironman.html"> <img src="hqs/ironman.jpg" alt="Slide 3"></a>
+                                </div>
+                                <div class="slick-slide">
+                                    <a href="jojo_phantom.html"><img src="hqs/jojo_phamtom.jpg" alt="Slide 3"></a>
+                                </div>
+                                <!-- Adicione mais slides conforme necessário -->
+
+                            </div>
+                            <div class="seta2">
+                                <img src="/Imagens/flecha.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="Pagina_Inicial.js"></script>
+    <script src="Carrossel.js"></script>
+
+    <script src="produto.js"></script>
+</body>
+
+</html>

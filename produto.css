@@ -1,7 +1,5 @@
-#image-container {}
-
 #main-image {
-	max-width: 720px;
+	max-width: 361px;
 	max-height: 550px;
 	border-radius: 12px;
 }
@@ -23,6 +21,7 @@
 
 .container_thumbs {
 	width: 85px;
+
 }
 
 .desc {
@@ -132,6 +131,11 @@ button#toggleButton:hover {
 
 .payment-button {
 	color: #0056b3;
+}
+
+.payment-button:hover {
+	background-color: #0056b3;
+	color: black;
 }
 
 
