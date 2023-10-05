@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="lib/slick-1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="lib/slick-1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="categorias.css">
+    <link rel="stylesheet" href="login.css">
     <title>LeCooper</title>
 </head>
 
@@ -18,8 +19,8 @@
             <img class="user" src="Imagens/user.png" alt="user">
             <div class="user-menu">
                 <ul>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Registro</a></li>
                 </ul>
             </div>
         </div>
@@ -56,20 +57,31 @@
 
 
         </div>
-        <div class="product-container">
+        <div class="alin">
+            <div class="login-container">
+                <h2>Registro</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Confirmar Senha:</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </div>
 
-            <div class="product">
-                <a href="batman_ano1.html"><img src="hqs/batman_ano1.jpg" alt="Produto 2"></a>
-                <div class="product-title">Batman Ano 1</div>
+                    <button type="submit" class="btn-login" id="botaook">OK</button>
+                </form>
             </div>
-            <div class="product">
-                <a href="batman_lance.html"><img src="hqs/batman_charada.jpg" alt="Produto 3"></a>
-                <div class="product-title">Batman Lance do Charada</div>
-            </div>
-
-            <!-- Adicione mais produtos conforme necessário -->
         </div>
-
 
 
 

@@ -1,0 +1,77 @@
+#profile {
+    text-align: center;
+    margin: 20px auto;
+    width: 900px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#usericon {
+    font-size: 48px;
+    width: 70px;
+}
+
+#email {
+    margin-top: 10px;
+    color: #0056b3;
+}
+
+#loyalty-level {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #0056b3;
+}
+
+#navigation {
+    margin-top: 20px;
+    color: #0056b3;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.nav-item:hover {
+    background-color: rgb(107, 99, 99);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .6s;
+    color: yellow;
+}
+
+.nav-item:not(:hover) {
+    transition: border-radius .6s, background-color 0.6s, color 0.6s;
+    /* Adiciona transição para fundo e cor */
+
+}
+
+
+
+.nav-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+#nav-icon {
+    width: 60px;
+    margin-right: 40px;
+    transform-origin: left;
+    /* Define a origem da transformação para a esquerda */
+    transform: scaleX(.9);
+    /* Escala inicial */
+    transition: transform 0.6s, width 0.6s;
+    /* Adiciona transição para largura e transformação */
+}
+
+.nav-item:hover #nav-icon {
+
+    width: 80px;
+    /* Largura ao passar o mouse por cima */
+    transform: scaleX(1);
+    /* Escala ao passar o mouse por cima */
+
+}

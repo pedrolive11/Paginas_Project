@@ -141,6 +141,7 @@ button a:hover {
     -ms-flex-align: center;
     align-items: center;
     float: right;
+
 }
 
 .search-txt {
@@ -441,4 +442,60 @@ button a:hover {
     display: flex;
     position: relative;
     align-items: center;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos básicos */
+/* Estilos básicos */
+.user-container {
+    position: relative;
+    /* Mantenha este estilo para o layout do cabeçalho */
+}
+
+.user-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    /* Começa com opacidade zero para esconder o menu */
+    transform: translateY(-10px);
+    /* Move o menu para cima para escondê-lo */
+    border-radius: 10px;
+}
+
+.user-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-menu li {
+    padding: 10px;
+    text-align: center;
+}
+
+.user-menu a {
+    color: yellow;
+}
+
+/* Exibir o menu com animação ao passar o mouse sobre a imagem do usuário */
+.user-container:hover .user-menu {
+    display: block;
+    animation: slideIn 0.3s ease-in-out forwards;
+    /* Inicia a animação */
+    margin-top: 52px;
 }
